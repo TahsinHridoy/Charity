@@ -5,6 +5,7 @@ body{
 header{
     display: flex !important;
     justify-content: space-between;
+    padding-bottom: 100px !important;
 }
 
 header section span{
@@ -125,143 +126,127 @@ header .lastbtn:hover{
 
 
 /* Article */
-.content-section {
-    min-height: 2000px;
-  }
-  
-  .sidebar-section {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .sidebar-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  .has-4-items .sidebar-item {
-    height: 25%;
-  }
-  .has-4-items .sidebar-item:nth-child(2) {
-    top: 25%;
-  }
-  .has-4-items .sidebar-item:nth-child(3) {
-    top: 50%;
-  }
-  .has-4-items .sidebar-item:nth-child(4) {
-    top: 75%;
-  }
-  
-  .has-3-items .sidebar-item {
-    height: 33.333333%;
-  }
-  .has-3-items .sidebar-item:nth-child(2) {
-    top: 33.333333%;
-  }
-  .has-3-items .sidebar-item:nth-child(3) {
-    top: 66.666666%;
-  }
-  
-  .has-2-items .sidebar-item {
-    height: 50%;
-  }
-  .has-2-items .sidebar-item:nth-child(2) {
-    top: 50%;
-  }
-  
-  .has-10-items .sidebar-item {
-    height: 10%;
-  }
-  .has-10-items .sidebar-item:nth-child(2) {
-    top: 10%;
-  }
-  .has-10-items .sidebar-item:nth-child(3) {
-    top: 20%;
-  }
-  .has-10-items .sidebar-item:nth-child(4) {
-    top: 30%;
-  }
-  .has-10-items .sidebar-item:nth-child(5) {
-    top: 40%;
-  }
-  .has-10-items .sidebar-item:nth-child(6) {
-    top: 50%;
-  }
-  .has-10-items .sidebar-item:nth-child(7) {
-    top: 60%;
-  }
-  .has-10-items .sidebar-item:nth-child(8) {
-    top: 70%;
-  }
-  .has-10-items .sidebar-item:nth-child(9) {
-    top: 80%;
-  }
-  .has-10-items .sidebar-item:nth-child(10) {
-    top: 90%;
-  }
-  
-  .make-me-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding: 0 15px;
-  }
-  
-  /* Ignore This, just coloring */
+ 
+article .container-fluid h1{
+  font-size: 60px !important; 
+}
+article .container-fluid{
+  padding: 33px !important;
+}
 
-  article {
-    background: transparent;
-    border-radius: 12px;
-    padding: 25px 0;
-  }
-  
-  .title-section, .content-section, .sidebar-section {
-    background: #fff;
-  }
-  
-  .title-section {
-    text-align: center;
-    padding: 50px 15px;
-    margin-bottom: 30px;
-  }
-  
-  .content-section h2 {
-    text-align: center;
-    margin: 0;
-    padding-top: 200px;
-  }
-  
-  .sidebar-item {
-    text-align: center;
-  }
-  .sidebar-item h3 {
-    background: gold;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 50px 0 100px;
-    border-bottom: solid 1px #fff;
-  }
-  .sidebar-item h3.alt {
-    background: pink;
-  }
-  .sidebar-item h4 {
-    font-size: 34px !important;
-    padding: 15px 0;
-    background: white;
-    border-bottom: solid 1px orange;
-    font-size: 12px;
-  }
-  .sidebar-item h5 {
-    padding: 25px 0;
-    background: lightgreen;
-    border-bottom: solid 1px #fff;
-    font-size: 12px;
-  }
-  
+  /* Cards */
+  @import url('https://fonts.googleapis.com/css?family=Oswald|Poppins');
   body {
-    padding-bottom: 1000px;
+      /* font-family: 'Oswald', sans-serif; */
+      font-family: 'Poppins', sans-serif;
   }
+
+  .card-box {
+      background: #FAFAFA;
+      min-height: 300px;
+      position: relative;
+      padding: 30px 30px 20px;
+      margin-bottom: 20px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      position: relative;
+      cursor: pointer;
+  }
+
+  .card-box:hover {
+      background: linear-gradient(to right, #1fa2ff17 0%, #12d8fa2b 51%, #1fa2ff36 100%);
+  }
+
+  .card-box:after {
+      display: block;
+      background: #2196F3;
+      border-top: 2px solid #2196F3;
+      content: '';
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+  }
+
+  .card-title h2 {
+      margin: 0;
+      padding-top: 5%;
+      color: #2196F3;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 1;
+      margin-bottom: 15px;
+  }
+
+  .card-title p {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+  }
+
+  .card-link a {
+      text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      color: #FF5722;
+      font-size: 15px;
+  }
+ 
+
+  /* footer */
+  .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
   
